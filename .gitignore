@@ -49,4 +49,3 @@ __azurite_db*__.json
 
 # google sheets service account json file
 service_account.json
-tests/base64_encode.py
