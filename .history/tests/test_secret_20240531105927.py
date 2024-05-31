@@ -1,5 +1,3 @@
-"""script to test reading secrests stored in the Github repository settings."""
-
 import os
 import json
 
@@ -16,4 +14,13 @@ if json_secret is None:
 else:
     
     print(json_secret)
+
+
+    # Parse the JSON string into a dictionary
+    # secret_dict = json.loads(json_secret)
+        
+    # Access the values from the dictionary
+    # token_uri = secret_dict.get('token_uri')
+        
+    # print(f'The API key is: {token_uri}')
     
