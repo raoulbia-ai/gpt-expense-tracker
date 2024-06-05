@@ -61,6 +61,40 @@ docker push myacr.azurecr.io/myapp:latest
 ### License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
+### Testing
+
+```
+curl -X POST https://mywebapp.azurewebsites.net/receive_payload \
+-H "x-api-key: <unencoded-key-here>" \
+-H "Content-Type: application/json" \
+-d '{
+    "rows": [
+        {
+            "Date": "2023-05-30",
+            "Shop": "MarketPlace",
+            "Item": "Bananas",
+            "Price": 1.2,
+            "Category": "Fruit"
+        },
+        {
+            "Date": "2023-05-30",
+            "Shop": "MarketPlace",
+            "Item": "Chicken Breast",
+            "Price": 5,
+            "Category": "Meat"
+        },
+        {
+            "Date": "2023-05-30",
+            "Shop": "MarketPlace",
+            "Item": "Yogurt",
+            "Price": 2.5,
+            "Category": "Dairy"
+        }
+    ]
+}'
+```
+
+<br>
 
 ### Addendum: ChatGPT Actions JSON Schema
 
